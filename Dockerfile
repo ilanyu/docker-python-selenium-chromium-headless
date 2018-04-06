@@ -3,6 +3,8 @@ MAINTAINER ilanyu <lanyu19950316@gmail.com>
 
 RUN apk add --update --no-cache chromium chromium-chromedriver zlib-dev xvfb wait4ports xorg-server dbus ttf-freefont mesa-dri-swrast grep udev
 
+RUN pip install -U selenium xlwt
+
 RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
